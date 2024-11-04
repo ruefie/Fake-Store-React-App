@@ -1,7 +1,7 @@
 # Fake Store Product Catalog - React App
 
 ## Overview
-This React application displays a product catalog using data fetched from the Fake Store API. Users can browse and filter products and add items to a cart.
+This React application displays a product catalog using data fetched from the Fake Store API. Users can browse and filter products.
 
 ## Features
 - Product listing with details and images
