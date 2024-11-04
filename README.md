@@ -7,14 +7,6 @@ This React application displays a product catalog using data fetched from the Fa
 - Product listing with details and images
 - Sorting and filtering options
 
-
-## Installation
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-npm install
-npm start
-  
 ## Technologies Used
 - React
 - Axios
@@ -26,4 +18,15 @@ npm start
 - Managing component state and props
 - React Hooks 
 - React Router
+
+## Installation
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+npm start 
+
+
+
+
 
