@@ -1,0 +1,283 @@
+:root {
+  --textTitle-color: #22a9e8;
+  --pText-color: #333333;
+  --button-color: #5A8DEE;
+  --hover-color: #073996;
+  --atc-btn: #FFA500;
+  --header-color: #0c4b69;
+  --background-color:  #E5E8EC;
+  --shadow-color:#abaaa9;
+  --card-color: #fff;
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+  background: var(--background-color);
+  color: var(--ptext-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--textTitle-color);
+  color: var(--background-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.search {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--button-color);
+  width: 350px;
+  font-size: 15px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-buttons button {
+  background-color: var(--button-color);
+  color: var(--card-color);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: var(--hover-color);
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.card {
+  background-color: var(--card-color);
+  width: 380px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  overflow: hidden;
+  text-align: center;
+  color: var(--pText-color);
+  padding: 10px;
+}
+
+.card-image{
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  margin: auto;
+  
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+ 
+}
+
+.card-info {
+  padding: 15px;
+ 
+}
+
+.card-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--header-color);
+}
+
+.card-info p {
+  font-size: 12px;
+  color: var(--pText-color);
+  margin-bottom: 8px;
+}
+
+.card-info h5 {
+  font-size: 15px;
+  color: var(--pText-color);
+  margin-bottom: 10px;
+}
+
+.card-info ul {
+  padding-left: 20px;
+  text-align: left;
+  list-style-type: disc;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: var(--pText-color);
+}
+
+.card-info ul li {
+  margin-bottom: 5px;
+}
+
+.item-price{
+  display: flex;
+  justify-content: space-between;
+  align-items:baseline;
+  margin: 10px;
+}
+
+
+.card-info button {
+  background-color: var(--atc-btn);
+  color: var(--card-color);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.card-info button:hover {
+  background-color: var(--hover-color);
+  color: var(--card-color);
+}
+
+
+/* SkeletonCard.css */
+
+.skeleton-card {
+  background-color: var(--card-color);
+  border-radius: 8px;
+  padding: 10px;
+  width: 380px;
+  height: 560px;
+  margin: 10px;
+}
+
+.skeleton-image {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  animation: pulse 1.2s ease-in-out infinite;
+  width: 260px;
+  height: 260px;
+  margin: auto;
+}
+
+.skeleton-info {
+  margin-top: 20px;
+}
+
+.skeleton-title,
+.skeleton-text {
+  height: 30px;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  margin: 20px;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.skeleton-title {
+  width: 300px;
+}
+
+.skeleton-text {
+  width: 300px;
+}
+
+.skeleton-price-btn{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 20px;
+  
+}
+
+.skeleton-price{
+  width: 60px; 
+  height: 20px;
+  background-color: var(--background-color); 
+  border-radius: 4px;
+  animation: pulse 1.2s ease-in-out infinite;
+
+}
+
+.skeleton-button {
+  width: 100px; 
+  height: 30px;
+  background-color: var(--background-color);
+  border-radius: 6px;
+  animation: pulse 1.2s  ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.footer {
+  background-color: var(--pText-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  font-size: 15px;
+}
+  
+.footer p {
+  margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  .card{
+    width: 300px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
