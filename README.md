@@ -22,7 +22,7 @@ This React application displays a product catalog using data fetched from the Fa
 ## Installation
 ```bash
 git clone https://github.com/ruefie/Fake-Store-React-App.git
-cd your-repo
+cd Fake-Store-React-App
 npm install
 npm start 
 
